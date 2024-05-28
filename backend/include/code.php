@@ -72,8 +72,6 @@ if (isset($_POST['login'])) {
                         }
                         $attendanceQry = "INSERT INTO `attendance`(`id`, `employeeId`, `year`, `month`, `day`, `days`,`status`, `date`) VALUES ('$id','$employeeId','$year','$month','$day','$days', 1 ,'$date')";
                         $markAttendance = mysqli_query($conn, $attendanceQry);
-                        echo $attendanceQry;
-                        print_r($markAttendance);
                     }
 
 

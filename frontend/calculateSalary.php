@@ -193,7 +193,7 @@ if (isset($_GET['id']) && isset($_GET['name'])) {
                     <th scope="col">Date</th>
                     <th scope="col">Day</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Action</th>
+                    <!-- <th scope="col">Action</th> -->
                   </tr>
                 </thead>
                 <tbody>
@@ -207,9 +207,9 @@ if (isset($_GET['id']) && isset($_GET['name'])) {
                       <td><?php echo $date[$i];  ?></td>
                       <td><?php echo $day[$i];  ?></td>
                       <td><?php echo $status[$i];  ?></td>
-                      <td>
+                      <!-- <td>
                         <a href="" style="margin-left: 15px;"><i class="bi bi-pencil text-primary"></i></a>
-                      </td>
+                      </td> -->
                     </tr>
                   <?php
                   }

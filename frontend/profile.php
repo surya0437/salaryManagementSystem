@@ -133,7 +133,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                   <!-- Profile Edit Form -->
                   <form class="row g-3" action="../backend/include/code.php" method="post" enctype="multipart/form-data">
 
-                    <input type="text" name="empId" id="" value="<?php echo $_SESSION['emplID']; ?>">
+                    <input type="hidden" name="empId" id="" value="<?php echo $_SESSION['emplID']; ?>">
                     <div class="row mb-3">
                       <div class="d-flex align-items-center col-md-4 col-lg-3">
                         <label for="profileImage" class=" col-form-label">Profile Image</label>

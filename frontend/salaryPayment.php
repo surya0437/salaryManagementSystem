@@ -25,7 +25,8 @@ while ($row = mysqli_fetch_assoc($result)) {
   $name[] = $row['name'];
   $image[] = $row['image'];
   $employeeType[] = $row['employeeType'];
-  $salaryType[] = $row['salaryType'];
+  // $salaryTypeId = $row['salaryType'];
+
 }
 ?>
 <title>Salary Payment</title>
@@ -54,7 +55,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                       <th scope="col">#</th>
                       <th scope="col">Name</th>
                       <th scope="col">Employee Type</th>
-                      <th scope="col">Salary</th>
+                      <!-- <th scope="col">Salary</th> -->
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
@@ -66,7 +67,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <th><?php echo $i + 1;  ?></th>
                         <th><?php echo $name[$i];  ?></th>
                         <td><?php echo $employeeType[$i];  ?></td>
-                        <td><?php echo $salaryType[$i];  ?></td>
+                        <!-- <td><?php echo $salaryType[$i];  ?></td> -->
                         <td>
                           <a href="calculateSalary.php?id=<?php echo $id[$i] ?>&name=<?php echo $name[$i] ?>"style="margin-left: 15px;"><i class="bi bi-calculator text-success"></i></a>
                           <!-- <a href="" style="margin-left: 15px;"><i class="bi bi-credit-card"></i></a> -->
